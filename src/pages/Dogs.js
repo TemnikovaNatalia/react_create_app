@@ -9,6 +9,7 @@ export function Dogs() {
         console.log(data.message);
         const image = document.createElement("img");
         image.src = data.message;
+        image.width = "100px";
         document.querySelector(".dogsAp").appendChild(image);
       });
   }, []);
@@ -21,3 +22,5 @@ export function Dogs() {
     </>
   );
 }
+
+
